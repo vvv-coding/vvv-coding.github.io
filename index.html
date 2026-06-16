@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>FocusedMode</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <div class="topbar">
+    <h1>FocusedMode</h1>
+    <div class="player">
+      <span class="song-name" id="song-name">Weightless — Marconi Union</span>
+      <button class="btn" id="play-btn" onclick="togglePlay()">▶ Play</button>
+      <button class="btn" onclick="nextSong()">⏸ Pause</button>
+    </div>
+  </div>
+
+  <div class="grid">
+    <div class="left-col">
+      <div class="card">
+        <div class="card-label">Quote of the session</div>
+        <p class="quote-text" id="quote-text"></p>
+        <p class="quote-person" id="quote-person"></p>
+      </div>
+      <div class="card">
+        <div class="card-label">Tasks</div>
+        <ul class="task-list">
+          <li><span class="task-dot"></span>Complete DSA assignment on segment trees</li>
+          <li><span class="task-dot"></span>Push Synced Brain CI/CD pipeline update</li>
+          <li><span class="task-dot"></span>Review mBERT fine-tuning results</li>
+          <li><span class="task-dot"></span>Prepare Cisco application materials</li>
+          <li><span class="task-dot"></span>Solve 2 problems on codingchallenges.fyi</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="story-card">
+      <div class="card-label">Story</div>
+      <p class="story-body">
+        Imagine this: you are an elderly person, sitting alone in a quiet room filled with dusty, untouched projects you once dreamed of completing.<br></br>
+        Each represents an opportunity you missed, a passion you set aside <b>for later</b>. You realize, with a heavy heart, that you have run out of <b>later</b>.<br></br>
+        The time to act has passed, and those dreams—the books you never wrote, the places you never visited, the connections you never nurtured—have slipped through your fingers forever.<br></br>
+        The tragedy is not that you failed, but that you never gave yourself the chance to try. Time moved on, and you simply watched, hoping you would feel more ready tomorrow. But tomorrow never came.<br></br>
+      </p>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

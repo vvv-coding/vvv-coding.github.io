@@ -1,0 +1,136 @@
+* { margin: 0; padding: 0; box-sizing: border-box; }
+
+body {
+  background: #1a1a1a;
+  color: #e0e0e0;
+  font-family: 'Segoe UI', sans-serif;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.topbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 14px 28px;
+  border-bottom: 1px solid #2e2e2e;
+  background: #111;
+}
+
+.topbar h1 {
+  font-size: 15px;
+  font-weight: 500;
+  color: #fff;
+  letter-spacing: 0.04em;
+}
+
+.player {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.song-name {
+  font-size: 13px;
+  color: #aaa;
+}
+
+.btn {
+  background: #2a2a2a;
+  border: 1px solid #3a3a3a;
+  color: #fff;
+  padding: 6px 14px;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 13px;
+  transition: background 0.2s;
+}
+
+.btn:hover { background: #333; }
+.btn.active { background: #3d3d3d; }
+
+.grid {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  gap: 20px;
+  padding: 28px;
+  flex: 1;
+}
+
+.left-col {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.card {
+  background: #222;
+  border: 1px solid #2e2e2e;
+  border-radius: 10px;
+  padding: 22px 24px;
+  flex: 1;
+}
+
+.card-label {
+  font-size: 11px;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: #666;
+  margin-bottom: 14px;
+}
+
+.quote-text {
+  font-size: 16px;
+  line-height: 1.6;
+  color: #e0e0e0;
+  font-style: italic;
+}
+
+.quote-person {
+  margin-top: 12px;
+  font-size: 13px;
+  color: #888;
+}
+
+.task-list { list-style: none; }
+
+.task-list li {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 10px 0;
+  border-bottom: 1px solid #2a2a2a;
+  font-size: 14px;
+  color: #ccc;
+}
+
+.task-list li:last-child { border-bottom: none; }
+
+.task-dot {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: #555;
+  flex-shrink: 0;
+}
+
+.story-card {
+  background: #222;
+  border: 1px solid #2e2e2e;
+  border-radius: 10px;
+  padding: 22px 24px;
+}
+
+.story-title {
+  font-size: 14px;
+  font-weight: 500;
+  color: #fff;
+  margin-bottom: 14px;
+}
+
+.story-body {
+  font-size: 14px;
+  line-height: 1.8;
+  color: #bbb;
+}
