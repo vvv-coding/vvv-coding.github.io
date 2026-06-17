@@ -50,6 +50,30 @@ body {
 .btn:hover { background: #333; }
 .btn.active { background: #3d3d3d; }
 
+.scrolling-banner {
+  background: #ff4444;
+  color: #fff;
+  padding: 10px 0;
+  overflow: hidden;
+  white-space: nowrap;
+}
+
+.banner-text {
+  display: inline-block;
+  animation: scroll 15s linear infinite;
+  font-weight: 600;
+  font-size: 14px;
+}
+
+@keyframes scroll {
+  0% {
+    transform: translateX(100%);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}
+
 .grid {
   display: grid;
   grid-template-columns: 1fr 2fr;
@@ -133,4 +157,131 @@ body {
   font-size: 14px;
   line-height: 1.8;
   color: #bbb;
+}
+
+/* Mobile Responsive Styles */
+@media (max-width: 768px) {
+  .topbar {
+    flex-direction: column;
+    gap: 10px;
+    padding: 10px 14px;
+  }
+
+  .topbar h1 {
+    font-size: 13px;
+  }
+
+  .player {
+    gap: 8px;
+    width: 100%;
+    justify-content: space-between;
+  }
+
+  .song-name {
+    font-size: 12px;
+    flex: 1;
+    text-align: center;
+  }
+
+  .btn {
+    padding: 5px 10px;
+    font-size: 12px;
+  }
+
+  .banner-text {
+    font-size: 12px;
+    animation: scroll 12s linear infinite;
+  }
+
+  .grid {
+    grid-template-columns: 1fr;
+    gap: 15px;
+    padding: 14px;
+  }
+
+  .left-col {
+    gap: 15px;
+  }
+
+  .card {
+    padding: 16px 18px;
+  }
+
+  .card-label {
+    font-size: 10px;
+  }
+
+  .quote-text {
+    font-size: 14px;
+  }
+
+  .quote-person {
+    font-size: 12px;
+  }
+
+  .story-card {
+    padding: 16px 18px;
+  }
+
+  .story-body {
+    font-size: 13px;
+    line-height: 1.6;
+  }
+}
+
+@media (max-width: 480px) {
+  .topbar {
+    padding: 8px 10px;
+  }
+
+  .topbar h1 {
+    font-size: 12px;
+  }
+
+  .player {
+    gap: 6px;
+  }
+
+  .song-name {
+    font-size: 11px;
+  }
+
+  .btn {
+    padding: 4px 8px;
+    font-size: 11px;
+  }
+
+  .scrolling-banner {
+    padding: 8px 0;
+  }
+
+  .banner-text {
+    font-size: 11px;
+    animation: scroll 10s linear infinite;
+  }
+
+  .grid {
+    padding: 10px;
+    gap: 12px;
+  }
+
+  .left-col {
+    gap: 12px;
+  }
+
+  .card {
+    padding: 12px 14px;
+  }
+
+  .quote-text {
+    font-size: 13px;
+  }
+
+  .task-list li {
+    font-size: 12px;
+  }
+
+  .story-body {
+    font-size: 12px;
+  }
 }

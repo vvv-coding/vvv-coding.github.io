@@ -13,16 +13,7 @@ const quotes = [
   { text: "A year from now, you'll wish you had started today. The pain of discipline lasts hours, the pain of regret lasts years.", person: "Anonymous" },
 ];
 
-const songs = [
-  "Weightless — Marconi Union",
-  "Experience — Ludovico Einaudi",
-  "Comptine d'un autre été — Yann Tiersen",
-  "Clair de Lune — Debussy",
-  "Gymnopédie No.1 — Erik Satie",
-];
-
 let playing = false;
-let songIndex = 0;
 
 function loadQuote() {
   const idx = Math.floor(Math.random() * quotes.length);
@@ -35,11 +26,6 @@ function togglePlay() {
   const btn = document.getElementById('play-btn');
   btn.textContent = playing ? '⏸ Pause' : '▶ Play';
   btn.classList.toggle('active', playing);
-}
-
-function nextSong() {
-  songIndex = (songIndex + 1) % songs.length;
-  document.getElementById('song-name').textContent = songs[songIndex];
 }
 
 loadQuote();
