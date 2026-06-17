@@ -166,6 +166,13 @@ body {
 
 /* Mobile Responsive Styles */
 @media (max-width: 768px) {
+  body {
+    height: auto;
+    min-height: 100dvh;
+    overflow-y: auto;
+    overflow-x: hidden;
+  }
+
   .topbar {
     flex-direction: column;
     gap: 10px;
@@ -202,14 +209,19 @@ body {
     grid-template-columns: 1fr;
     gap: 15px;
     padding: 14px;
+    flex: none;
+    overflow: visible;
   }
 
   .left-col {
     gap: 15px;
+    overflow: visible;
   }
 
   .card {
     padding: 16px 18px;
+    flex: none;
+    overflow: visible;
   }
 
   .card-label {
@@ -226,11 +238,23 @@ body {
 
   .story-card {
     padding: 16px 18px;
+    overflow: visible;
   }
 
   .story-body {
     font-size: 13px;
     line-height: 1.6;
+  }
+
+  .task-list li {
+    padding: 10px 0;
+    gap: 10px;
+    align-items: flex-start;
+    line-height: 1.45;
+  }
+
+  .task-dot {
+    margin-top: 5px;
   }
 }
 
@@ -284,6 +308,7 @@ body {
 
   .task-list li {
     font-size: 12px;
+    padding: 11px 0;
   }
 
   .story-body {
