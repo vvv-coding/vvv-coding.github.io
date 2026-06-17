@@ -1,16 +1,16 @@
 const quotes = [
   { text: "Where your attention goes, your time goes.", person: "Idowu Koyenikan" },
-  { text: "It does not matter how slowly you go as long as you do not stop.", person: "Confucius" },
+  { text: "Your dreams don't disappear when you ignore them, they become someone else's achievements.", person: "Anonymous" },
   { text: "You don't have to be great to start, but you have to start to be great.", person: "Zig Ziglar" },
   { text: "Hard work beats talent when talent doesn't work hard.", person: "Tim Notke" },
   { text: "The two most important days in your life are the day you are born and the day you find out why.", person: "Mark Twain" },
   { text: "Success is the sum of small efforts, repeated day in and day out.", person: "Robert Collier" },
-  { text: "The only way to do great work is to love what you do.", person: "Steve Jobs" },
+  { text: "Imagine meeting the person you could have become. The real heartbreak is having no explanation for why you never tried.", person: "Anonymous" },
   { text: "Fact: After working 40 hours in a week, productivity decreases by up to 50%.", person: "Survey" },
-  { text: "Great things never come from comfort zones.", person: "Unknown" },
+  { text: "Amateurs sit and wait for inspiration. The rest of us just get up and go to work.", person: "Stephen King" },
   { text: "Dream it. Wish it. Do it.", person: "Unknown" },
-  { text: "Little by little, one travels far.", person: "J.R.R. Tolkien" },
-  { text: "You are braver than you believe, stronger than you seem.", person: "A.A. Milne" },
+  { text: "While we are postponing, life speeds by.", person: "Seneca" },
+  { text: "A year from now, you'll wish you had started today. The pain of discipline lasts hours, the pain of regret lasts years.", person: "Anonymous" },
 ];
 
 const songs = [
